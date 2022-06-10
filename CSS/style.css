@@ -1,0 +1,261 @@
+.conteiner{
+	font-size:16px;
+}
+.conteiner a{
+	color:#dbc0b0;
+}
+.topNubex {
+	position: fixed;
+	right: 45px;
+	bottom: 45px;
+   }
+ .footer-blk{
+	background-color:#1F1A1D;
+	color: #fff;
+    text-align: center;
+    padding: 10px;
+ }
+/*menu*/
+/* Стиль меню навигации */
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+/* Скрыть ссылки внутри меню навигации ( кроме главной/логотип) */
+.topnav #mylinks{
+    display: none;
+}
+/* Ссылки меню навигации по стилю */
+.topnav a{
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+/* Стиль меню гамбургера */
+.topnav a.icon{
+    background: #333;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    /* Добавить серый цвет фона при наведении курсора мыши */
+    .topnav a:hover{
+        background: #ddd;
+        color: #000000;
+    }
+    /* Стиль активной ссылки (или главная/логотип) */
+    .active{
+        background: #1f1a1d;;
+        color: #fff;
+    }
+	
+.header{
+	display:flex;
+	height:100vh;
+}	
+.header-content{
+	width:36%;
+	background-color:#ECE4DF;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	text-align:center;
+}
+.header-bg{
+	width:64%;
+	background-image: url("..//image/pexels-emma-bauso-2253870(1).jpg");
+	background-size: cover;
+	background-position: 35% center;
+}
+.header-heading,.header-text{
+	margin-top:10px;
+	text-align:center;
+}
+.button{
+	padding:9px 48px;
+	border-radius:5px;
+	background-color:#3D2214;
+	color:#fff;
+	margin:15px auto;
+}
+/*О студии*/
+.studio-blk{
+	display:flex;
+	flex-direction:column;
+	color: #fff;
+}
+.studio-blk h2{
+	text-align:center;
+	}
+.camera_bg{
+	background-image:url(..//image/camera-1024_600.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center 15%;
+}
+.studio-blk-text{
+	width: 40%;
+    margin: 70px 0 70px 50px;
+    padding: 20px;
+	line-height:1.5rem;
+    background-color:rgba(17,14,14,0.6);
+	border-radius:4px;
+}
+.team_blk_bg{
+	background-color:#1F1A1D;
+}
+.team_blk{
+	display:flex;
+	justify-content: center;
+}
+.team_blk img{
+	width:240px;
+	height:155px;
+}
+.bg_image{
+	background-image:url(..//image/photo-studio-4303312_1280.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center top;
+}
+.how-we-do-blk{
+	width: 68%;
+    margin: 40px auto;
+	background-color:rgba(17,14,14,0.6);
+	border-radius:4px;
+    padding: 30px 60px;
+	line-height:1.5rem;
+}
+.how-we-do-blk h3{
+	margin-bottom:5px;
+}
+.how-we-do-blk div{
+	margin-bottom:30px;
+}
+/*Блок Price*/
+.price_blk{
+	background-image:url('../image/camera-1130731_1280.jpg');
+	padding: 5px 10px;
+	background-size:cover;
+}
+.price_blk h2{
+	color:#fff;
+	text-align:center;
+}
+.price_flex{
+	display:flex;
+	justify-content:space-around;
+}
+.price_flex > div{
+	color:#fff;
+	width:30%;
+	box-shadow:0px 2px 5px -1px rgba(122,122,122,0.9);
+	background-color:rgba(17,14,14,0.5);
+/*	backdrop-filter:blur(2px);*/
+	-webkit-backdrop-filter:blur(12px);
+	display:flex;
+	flex-direction:column;
+	border-radius:3px;
+}
+.price_flex li{
+	list-style-type:none;
+	padding:0.4rem 0;
+	display:inline-block;
+	border-bottom:1px dashed #888888;
+	width:96%;
+}
+.price_flex p{
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+.price_flex a{
+	display:block;
+	text-align:center;
+	padding:7px 14px;
+	border:1px solid #888888;
+	border-radius:7px;
+}
+.content_pr{
+	flex-grow:1.5;
+}
+.footer_pr{
+	margin:2rem 1.5rem;
+}
+/*mobile*/
+@media only screen and (min-width:1200px){
+	.price_flex > div{
+	backdrop-filter:blur(2px);
+	}
+}
+@media only screen and (max-width:768px){
+	.price_blk{
+	background-image:url('../image/camera-1130731_1280.jpg');
+	background-attachment:fixed;
+	background-position: 60% center;
+}
+	.price_flex{
+		display:flex;
+		flex-direction:column;
+	}
+	.price_flex > div{
+	width:96%;
+	margin:10px auto;
+	}
+}
+/*Mobile*/
+@media screen and (max-width:768px){
+
+.studio-blk-text,.how-we-do-blk{
+	width: 94%;
+	padding:10px;
+	margin:0 auto;
+}	
+.camera_bg{
+		background-attachment:fixed;
+	}
+.bg_image{
+	background-image:url(..//image/photo-studio-4303312_1280.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center top;
+}
+.team_blk{
+	width:240px;
+	margin:0 auto;
+	flex-direction:column;
+}
+}
+/*mobile*/
+@media only screen and (max-width:768px){
+	.header{
+	display:flex;
+    flex-direction: column-reverse;;
+	}
+	.header-bg{
+	width:100%;
+	height:100vh;
+	background-image: url("..//image/pexels-emma-bauso-2253870(1).jpg");
+	background-size: cover;
+	background-position:35% center;	
+}
+	.header-content{
+	width:100%;
+	height:50vh;
+}
+.header-hid{
+	display:block;
+	text-align:center;
+}
+.header-heading{
+	margin-top:10px;
+}
+.header-phone{
+	margin-bottom:10px;
+}
+}
